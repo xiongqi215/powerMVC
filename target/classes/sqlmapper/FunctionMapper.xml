@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Function">
+<!-- 查询角色所拥有的菜单 -->
+<select id="functionList" parameterType="java.util.HashMap" resultType="FunctionInfo">
+select 
+ tf.id,
+ tf.fun_name_ch as funNameCh,
+ tf.fun_code as funCode,
+ tf.parent_id as parentId,
+ tf.fun_name_en as funNameEn
+from t_function tf 
+	inner join t_role_function trf on tf.id = trf.function_id
+	inner join t_role tr on trf.role_id = tr.id
+where tf.is_delete = '0' and trf.is_delete = '0' and tr.is_delete ='0'
+<if test="roleId !=null">
+	and tr.id = #{roleId}
+</if>
+</select>
+<!-- 查询所有的菜单 -->
+<select id="allFunctionList" parameterType="java.util.HashMap" resultType="FunctionInfo">
+select 
+ tf.id,
+ tf.fun_name_ch as funNameCh,
+ tf.fun_code as funCode,
+ tf.parent_id as parentId,
+ tf.fun_name_en as funNameEn
+from t_function tf 
+where tf.is_delete = '0' 
+
+</select>
+
+
+</mapper>

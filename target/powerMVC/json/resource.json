@@ -1,0 +1,27 @@
+[{
+	"icon" : "icon-application",
+	"name" : "资源",
+	"code" : "",
+	"url" : "/finc/sysmanage/resource.action",
+	"sort" : "1",
+	"type" : "菜单",
+	"state" : "0"
+},
+{
+	"icon" : "icon-group",
+	"name" : "机构",
+	"code" : "",
+	"url" : "/finc/sysmanage/organ.action",
+	"sort" : "2",
+	"type" : "菜单",
+	"state" : "0"
+},
+{
+	"icon" : "icon-group",
+	"name" : "角色",
+	"code" : "",
+	"url" : "/finc/sysmanage/role.action",
+	"sort" : "3",
+	"type" : "功能",
+	"state" : "0"
+}]

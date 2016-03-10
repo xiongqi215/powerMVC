@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mgmt">
+
+
+<resultMap type="UserInfo" id="userLogin" >
+<id property="id" column="id" />
+<result property="loginName" column="LOGIN_NAME" />
+<result property="password" column="PASSWORD" />
+<result property="sindex" column="SINDEX" />
+<result property="telephone" column="TELEPHONE" />
+<result property="userName" column="USER_NAME" />
+<result property="userType" column="USER_TYPE" />
+<association property="roleInfo" javaType="RoleInfo">
+ <result property="id" column="ID"/>
+ <result property="name" column="NAME"/>
+</association>
+</resultMap>
+<!-- 登录加载用户及角色 -->
+<select id="checkUserLogin" resultMap="userLogin" parameterType="java.util.HashMap">
+select u.*,r.* from T_USER u,T_ROLE r where u.login_name=#{loginName} and u.password=#{password} and u.is_delete=#{is_delete}
+and u.role_id=r.id and u.USER_TYPE=#{userType}
+</select>
+
+<resultMap type="FunctionInfo" id="loadFunByRoleIdRes" >
+<id property="id" column="id" />
+<result property="funCode" column="FUN_CODE"/>
+<result property="funNameCh" column="FUN_NAME_CH"/>
+<result property="funNameEn" column="FUN_NAME_EN"/>
+<result property="parentId" column="PARENT_ID"/>
+<result property="url" column="URL"/>
+</resultMap>
+<select id="loadFunByRoleId" resultMap="loadFunByRoleIdRes" parameterType="java.util.HashMap">
+select * from t_function f where f.id in ( select rf.function_id  from t_role_function rf where rf.role_id=#{roleId}) and is_delete=#{is_delete}
+<if test="funType !=null">
+   and f.FUN_TYPE=#{funType}
+</if>
+</select>
+
+
+<select id="getAllFunction" resultMap="loadFunByRoleIdRes" parameterType="java.util.HashMap">
+select * from t_function f where f.is_delete=#{is_delete}
+<if test="funType !=null">
+   and f.FUN_TYPE=#{funType}
+</if>
+</select>
+
+
+
+</mapper>

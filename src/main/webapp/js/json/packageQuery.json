@@ -1,0 +1,17 @@
+{"total":2,"rows":[
+{
+	"sysType" : "国库集中支付",
+	"rules" : "直接支付凭证交易报文",
+	"packageSource" : "南昌市",
+	"packageDestination" : "建设银行",
+	"packageCode" : "A2013",
+	"packageReference" : "a3000000"
+},{
+	"sysType" : "国库集中支付",
+	"rules" : "直接支付凭证交易报文",
+	"packageSource" : "九江市",
+	"packageDestination" : "工商银行",
+	"packageCode" : "A2014",
+	"packageReference" : "b3000000"
+}
+]}

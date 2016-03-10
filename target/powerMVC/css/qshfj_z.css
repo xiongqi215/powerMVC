@@ -1,0 +1,63 @@
+body{font-size:12px;color:#fff;}
+*{margin:0;padding:0;}
+a{text-decoration:none;cursor:pointer;color:#fff;}
+a:hover{color:#FF0000;}
+ul{list-style-type:none;}
+img{border:0px;}
+.clear{clear:both;}
+.clearfix:after{clear:both;content:"";display:table;}
+.clearfix{*zoom:1;}
+
+
+.loginbgQsh_z{ background:url(../images/loginBg_z_zhuyj.png) no-repeat  center 50px;}
+	.loginbgQsh_z .cQsh_z{width:865px;margin:225px auto 0 auto;height:400px;}
+	.loginbgQsh_z  .crQsh_z{float:right;width:322px;}	
+.crdivQsh_z{margin-bottom:13px;float:left;width:100%;position:relative;}	
+	.crdivQsh_z .holder_z{position:absolute;top:0px;left:0px;}	
+	.crdivQsh_z	.usn_z,.crdivQsh_z	.psd_z,.crdivQsh_z	.yzm_z,.crdivQsh_z .holder_z{ padding:17px 20px;border:0px;color:#fff;font-size:16px;width:279px;background:none;}
+
+	.crdivQsh_z	.yzm_z{width:176px;}
+	.crdivQsh_z	.yzmImg_z{position:absolute;width:84px;height:32px;line-height:53px;right:20px;top:10px;border:0px;}
+	.crdivQsh_z	.dl_z{width:100%;height:56px;border:0px;background:url(../images/loginPicQsh_Z.png) -2px -97px ;}
+
+
+
+.nav1Qsh_z,.nav2Qsh_z{cursor: pointer;float:left;height:53px;width:139px;background:url(../images/loginPicQsh_Z.png) 0 -39px;}	
+.nav2Qsh_z{background:url(../images/loginPicQsh_Z.png) -185px -39px;}	
+	.nav1Qsh_z  .peop_z,.nav2Qsh_z  .dw_z{float:left;height:33px;width:29px;margin:13px 15px;background:url(../images/loginPicQsh_Z.png) 0 0;}	
+	.nav2Qsh_z  .dw_z{background:url(../images/loginPicQsh_Z.png) -147px 0;}	
+	.nav1Qsh_z  .text_z,.nav2Qsh_z  .text_z{float:left;height:53px;line-height:53px;color:#d7e0ea;font-size:16px;}	
+.nav2Qsh_z{margin-left:8px;}	
+.ms_z{color:#a6a6a6;font-size:12px;margin-top:100px;float:left;}	
+
+.marginbtm13_z{margin-bottom:8px;}
+.marginbtm15_z{margin-bottom:15px;}
+.marginbtm24_z{margin-bottom:24px;}
+.marginbtm13_z,.marginbtm15_z{padding:12px 0px;}
+.loginbgQsh_z .textbox{background-color:none;background-color:#2973B2;border:0px;}
+.loginbgQsh_z .textbox .textbox-prompt{background:#2973B2;color:#fff;font-size:16px;}
+.loginbgQsh_z .textbox-focused{-moz-box-shadow:0px;-webkit-box-shadow:0px;box-shadow:0px;}
+.loginbgQsh_z .validatebox-text{background:#2973B2;color:#fff;}
+.loginbgQsh_z  .combo-arrow{background-color:#2973B2;}
+.loginbgQsh_z  .icon-lock{background:url(../images/iconZ.png) no-repeat  4px -174px;}
+.loginbgQsh_z  .icon-man{background:url(../images/iconZ.png) no-repeat 2px -208px;}
+.loginbgQsh_z  .combo-arrow{background:url(../images/iconZ.png) no-repeat 4px -136px;}
+.loginbgQsh_z .textbox .textbox-text{font-size:16px;margin-left:18px;}
+
+	
+/* 模拟下拉框样式 input ul */
+.select_box {width:320px; position:relative;padding:0; font-size:12px;}
+.select_box .inputSel {color:#fff;font-size:16px;cursor:pointer; display:block; line-height:53px;height:53px; width:100%;  overflow:hidden;border:0px; padding-left:10px; background:url(../images/icon_down_1.png) no-repeat 280px center;}
+.select_box ul {width:315px; position:absolute; left:0; top:39px; border:1px solid #ccc; background:#fff; overflow: hidden;display:none; background:#ebebeb; z-index:9999;}
+.select_box ul li {font-size:12px;color:#000;display:block;height:30px;overflow:hidden;line-height:30px;padding-left:5px;width:100%;cursor:pointer;}
+.hover {background:#ccc;}
+
+.loginFormZ{padding:0px;}
+	
+	
+	
+	
+	
+	
+	
+	

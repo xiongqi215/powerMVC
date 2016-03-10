@@ -1,0 +1,15 @@
+[{
+	"id" : 1,
+	"ico" : "icon-application",
+	"text" : "资源管理"
+},
+{
+	"id" : 2,
+	"ico" : "icon-application",
+	"text" : "用户管理"
+},
+{
+	"id" : 3,
+	"ico" : "icon-user",
+	"text" : "角色管理"
+}]

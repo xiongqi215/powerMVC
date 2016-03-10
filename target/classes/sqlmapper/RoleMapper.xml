@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Role">
+<!-- 查询角色 -->  
+<select id="roleList"  parameterType="java.util.HashMap" resultType="RoleInfo">
+select t.id,t.name,t.description,t.update_time,
+wm_concat(tf.fun_name_ch) as funCNameStr,
+wm_concat(tf.fun_name_en) as funENameStr
+from t_role t 
+left join t_role_function trf on (t.id = trf.role_id and trf.is_delete = '0')
+left join t_function tf on (trf.function_id = tf.id and tf.is_delete = '0')
+where 1=1 
+and  t.is_delete=#{dataStatus}
+<if test="roleName != null">
+   AND t.name like '%' || #{roleName} || '%'
+</if>
+group by t.id,t.name,t.description,t.update_time
+order by t.update_time desc
+</select>
+<!-- 保存 -->
+<insert id="insertRole" parameterType="java.util.HashMap" statementType="CALLABLE">
+   <selectKey keyProperty="generateId" resultType="long" order="BEFORE">
+    select hibernate_sequence.nextval from dual
+   </selectKey>
+  {call role_insert_or_update(  
+  	#{operateType,jdbcType=VARCHAR,mode=IN},
+	#{funIds,jdbcType=VARCHAR,mode=IN},
+	#{generateId,jdbcType=VARCHAR,mode=IN},
+	#{role.name,jdbcType=VARCHAR,mode=IN},
+	#{role.description,jdbcType=VARCHAR,mode=IN},
+	#{role.updateUser,jdbcType=VARCHAR,mode=IN},
+	#{role.createUser,jdbcType=VARCHAR,mode=IN},
+    #{message,jdbcType=VARCHAR,mode=OUT}
+    
+    )}  
+</insert>
+<!-- 修改角色 -->
+<update id="updateRole" parameterType="java.util.HashMap" statementType="CALLABLE">
+{call role_insert_or_update(  
+  	#{operateType,jdbcType=VARCHAR,mode=IN},
+	#{funIds,jdbcType=VARCHAR,mode=IN},
+	#{role.id,jdbcType=VARCHAR,mode=IN},
+	#{role.name,jdbcType=VARCHAR,mode=IN},
+	#{role.description,jdbcType=VARCHAR,mode=IN},
+	#{role.updateUser,jdbcType=VARCHAR,mode=IN},
+	#{role.createUser,jdbcType=VARCHAR,mode=IN},
+    #{message,jdbcType=VARCHAR,mode=OUT}
+    
+    )}  
+
+</update>
+
+<!-- 删除角色 -->
+<update id="deleteRole" parameterType="java.util.HashMap" statementType="CALLABLE">
+{call role_insert_or_update(  
+  	#{operateType,jdbcType=VARCHAR,mode=IN},
+	#{funIds,jdbcType=VARCHAR,mode=IN},
+	#{objId,jdbcType=VARCHAR,mode=IN},
+	#{role.name,jdbcType=VARCHAR,mode=IN},
+	#{role.description,jdbcType=VARCHAR,mode=IN},
+	#{role.updateUser,jdbcType=VARCHAR,mode=IN},
+	#{role.createUser,jdbcType=VARCHAR,mode=IN},
+    #{message,jdbcType=VARCHAR,mode=OUT}
+    
+    )}  
+
+</update>
+  
+  <resultMap id="BaseResultMap" type="RoleInfo">
+    <id column="ID" jdbcType="DECIMAL" property="id" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="DESCRIPTION" jdbcType="VARCHAR" property="description" />
+    <result column="IS_DELETE" jdbcType="CHAR" property="isDelete" />
+    <result column="VERSION" jdbcType="DECIMAL" property="version" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="UPDATE_USER" jdbcType="VARCHAR" property="updateUser" />
+    <result column="SINDEX" jdbcType="DECIMAL" property="sindex" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="CREATE_USER" jdbcType="VARCHAR" property="createUser" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    ID, NAME, DESCRIPTION, IS_DELETE, VERSION, UPDATE_TIME, UPDATE_USER, SINDEX, CREATE_TIME, 
+    CREATE_USER
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from T_ROLE
+    where ID = #{id}
+  </select>
+
+
+</mapper>

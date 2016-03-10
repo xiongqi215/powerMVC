@@ -1,0 +1,17 @@
+{"total":2,"rows":[
+{
+	"sysType" : "惠农一卡通",
+	"rules" : "粮食直补",
+	"packageSource" : "南昌市",
+	"packageDestination" : "建设银行",
+	"packageCode" : "A2013",
+	"packageReference" : "a3000000"
+},{
+	"sysType" : "惠农一卡通",
+	"rules" : "良种补贴",
+	"packageSource" : "景德镇市",
+	"packageDestination" : "工商银行",
+	"packageCode" : "A2014",
+	"packageReference" : "b3000000"
+}
+]}

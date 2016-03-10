@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 会员管理Mapper -->
+<mapper namespace="lake">
+	<resultMap type="LakeInfo" id="LakeInfoResult">
+		<id property="id" column="ID" />
+		<result property="organId" column="ORGAN_ID" />
+		<result property="lakename" column="LAKENAME" />
+		<result property="lakearea" column="LAKEAREA" />
+		<result property="longitude" column="LONGITUDE" />
+		<result property="latitude" column="LATITUDE" />
+		<result property="lakeLength" column="LAKE_LENGTH" />
+		<result property="lakeWidth" column="LAKE_WIDTH" />
+		<result property="volume" column="VOLUME" />
+		<result property="countryCName" column="NAME_CN" />
+		
+	</resultMap>
+
+
+<select id="getLakeByOrganId" resultMap="LakeInfoResult" parameterType="java.util.HashMap">
+
+ select l.id,
+       l.ORGAN_ID,
+       l.LAKENAME,
+       l.LAKEAREA,
+       l.LAKETYPE,
+       l.LONGITUDE,
+       l.LATITUDE,
+       l.LAKE_LENGTH,
+       l.LAKE_WIDTH,
+       l.VOLUME,
+       c.NAME_CN
+  from t_lake_info l left join t_base_country c on  l.COUNTRY_ID=c.ID where l.IS_DELETE=#{isDelete}
+  and l.ORGAN_ID=#{organId}
+
+
+</select>
+</mapper>

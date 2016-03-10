@@ -1,0 +1,10 @@
+{"total":28,"rows":
+[
+	{"examDate":"2014年01月","baseScore":"12","score":"1"},
+	{"examDate":"2014年02月","baseScore":"12","score":"1.2"},
+	{"examDate":"2014年03月","baseScore":"12","score":"3"},
+	{"examDate":"2014年04月","baseScore":"12","score":"12"},
+	{"examDate":"2014年05月","baseScore":"12","score":"0"},
+	{"examDate":"2014年06月","baseScore":"12","score":"0.5"}
+]
+}

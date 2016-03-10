@@ -1,0 +1,125 @@
+/* north head   */
+.top_bg{ height:120px;overflow:hidden;background:#f1f1f1 url(../images/cz.jpg) no-repeat;}
+.headC_z{width:400px;font-size:14px;position:absolute;top:51px;left:700px;}
+	.userH_z{color:#fff;float:left;}
+		.userH_z span,.userH_z a{display:block;float:left;font-size:14px;}
+		.userH_z a{line-height:20px;text-decoration:none;color:#DF2913;font-weight:bold;width:160px;overflow:hidden;white-space: nowrap;text-overflow: ellipsis;}
+	.linkH_z{color:#9ec7ff;width:150px;overflow:hidden;font-size:14px;}
+		.linkH_z a{color:#9ec7ff;font-size:14px;text-decoration:none;}
+	/* north end */
+	
+	
+/* east */	
+	/* east ������ʼ tabs-header  */
+	.eastZ .tabs-header .tabs ,.eastZ .tabs-header .tabs-tool{background:D9E3EF;background:url(../images/iconZ.png) repeat-x;}  /* ��������ɫ */
+	.eastZ .tabs-header .tabs-with-icon{ padding-left:0px;}
+	.eastZ .tabs-header .tabs li a.tabs-close{background:url(../images/iconZ.png) no-repeat 4px -32px;opacity:1;filter:alpha(opacity=100);};   /*  Сͼ�����ʽ  */						
+	.eastZ .tabs-header .tabs li a.tabs-inner:hover {      /*  hover����ɫ  */
+					color:#565555;
+					background-color:#F4F4F4;
+					background:-webkit-linear-gradient(top,#F4F4F4 0,#F4F4F4 100%);
+					background:-moz-linear-gradient(top,#F4F4F4 0,#F4F4F4 100%);
+					background:-o-linear-gradient(top,#F4F4F4 0,#F4F4F4 100%);
+					background:linear-gradient(to bottom,#F4F4F4 0,#F4F4F4 100%);  /* ���� */
+					filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#F4F4F4,endColorstr=#F4F4F4,GradientType=0);	
+				}  	
+	.eastZ .tabs-header .tabs li a.tabs-inner {      /*  δ��ѡ�б���ɫ  */
+					-moz-border-radius:0;
+					-webkit-border-radius:0;
+					border-radius:0;		
+						
+					color:#565555;
+					background-color:#F4F4F4;
+					background:-webkit-linear-gradient(top,#F4F4F4 0,#F4F4F4 100%);
+					background:-moz-linear-gradient(top,#F4F4F4 0,#F4F4F4 100%);
+					background:-o-linear-gradient(top,#F4F4F4 0,#F4F4F4 100%);
+					background:linear-gradient(to bottom,#F4F4F4 0,#F4F4F4 100%);  
+					filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#F4F4F4,endColorstr=#F4F4F4,GradientType=0);											
+				}  												
+	.eastZ .tabs-header .tabs li.tabs-selected a.tabs-inner{ /*  ��ѡ�б���ɫ  */
+					color:#fff;
+					background-color:#2B91E3;
+					background:-webkit-linear-gradient(top,#2B91E3 0,#2B91E3 100%);
+					background:-moz-linear-gradient(top,#2B91E3 0,#2B91E3 100%);
+					background:-o-linear-gradient(top,#2B91E3 0,#2B91E3 100%);
+					background:linear-gradient(to bottom,#2B91E3 0,#2B91E3 100%);  /* ���� */					
+					filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#2B91E3,endColorstr=#2B91E3,GradientType=0);	
+				}			
+	.eastZ .tabs-header .tabs-scroller-left{background:#2B91E3 url(../images/iconZ.png) no-repeat  4px -40px;}
+	.eastZ .tabs-header .tabs-scroller-right{background:#2B91E3 url(../images/iconZ.png) no-repeat 6px -61px;}	
+	
+	/* east ��������  */
+	
+	/* ���˹�����򵼺�  ��ʼ */
+/* 	
+		.tabs-panels .tabs-header-left .tabs li.tabs-selected a.tabs-inner{ 
+			color:#000;
+			background:-webkit-linear-gradient(left,#FFE48D 0,#FFE48D 100%);
+			background:-moz-linear-gradient(left,#FFE48D 0,#FFE48D 100%);
+			background:-o-linear-gradient(left,#FFE48D 0,#FFE48D 100%);
+			background:linear-gradient(to right,red 0,#FFE48D 100%);
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFE48D,endColorstr=#FFE48D,GradientType=1);
+		}
+*/		
+		
+		.cont_z .tabs-header .tabs li.tabs-selected a.tabs-inner{ /*  ��ѡ�б���ɫ  */
+					color:#416AA3;
+					background-color:#FFE48D;
+					background:-webkit-linear-gradient(top,#FFE48D 0,#FFE48D 100%);
+					background:-moz-linear-gradient(top,#FFE48D 0,#FFE48D 100%);
+					background:-o-linear-gradient(top,#FFE48D 0,#FFE48D 100%);
+					background:linear-gradient(to bottom,#FFE48D 0,#FFE48D 100%);  /* ���� */					
+					filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFE48D,endColorstr=#FFE48D,GradientType=0);	
+				}					
+			
+		.cont_z  .tabs-header  .tabs{background:#F4F4F4;}
+		.cont_z  .tabs li a.tabs-inner{
+			background-color:#F4F4F4;
+			background:-webkit-linear-gradient(top,#F4F4F4 0,#F4F4F4 100%);
+			background:-moz-linear-gradient(top,#F4F4F4 0,#F4F4F4 100%);
+			background:-o-linear-gradient(top,#F4F4F4 0,#F4F4F4 100%);
+			background:linear-gradient(to bottom,#F4F4F4 0,#F4F4F4 100%);
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#F4F4F4,endColorstr=#F4F4F4,GradientType=0);
+			background:;
+			
+		}		
+		.cont_z  .tabs li a.tabs-inner:hover{background-color:#F4F4F4;}	
+	/* ���˹�����򵼺�  ����  */		
+	/* east ����  */
+	
+	/*  west ��ʼ   */
+	 .panel-header{  /* head��ʽ   */
+		background-color:#F4F4F4;
+		background:-webkit-linear-gradient(top,#F4F4F4 0,#F4F4F4 100%);
+		background:-moz-linear-gradient(top,#F4F4F4 0,#F4F4F4 100%);
+		background:-o-linear-gradient(top,#F4F4F4 0,#F4F4F4 100%);
+		background:linear-gradient(to bottom,#F4F4F4 0,#F4F4F4 100%);
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#F4F4F4,endColorstr=#F4F4F4,GradientType=0);					
+	}	
+	.layout-expand{  background-color:#F4F4F4;}  /* ��ߵ���Ӱ����ʽ  */
+	.layout-button-left{ background:url(../images/iconZ.png) no-repeat 4px -46px;}
+	.layout-button-right{ background:url(../images/iconZ.png) no-repeat 4px -67px;}
+
+		 .westZ .panel-header .panel-title{ color:#000;}	
+	.westZ .accordion .accordion-header{background-color:#F4F4F4;}  /* һ��δ��ѡ����ɫ  */
+		.westZ .accordion .accordion-header .panel-title{color:#565555;}
+
+																		/* ��ѡ����ɫ */	
+/* 																		
+	.westZ .accordion .accordion-header-selected{background-color:#2B91E3; }  
+		.westZ .accordion .accordion-header-selected .panel-title{color:#fff;}
+*/ 
+	.westZ .easyui-accordion ul li div.hover{background:#2B91E3;border:0px;} /* ��������hover��ʽ */
+	.westZ .easyui-accordion ul li div.selected{background:#2B91E3;border:0px;} /* ����������ѡ����ʽ */
+	.westZ .easyui-accordion ul li div.hover a{color:#fff;}
+	.westZ .easyui-accordion ul li div.selected a{color:#fff;}
+	
+	.westZ .panel-header,.westZ .panel-body{ border-color:#ccc;}
+	.westZ .accordion{border-color:#ccc;}
+	.westZ .accordion-collapse{ background:url(../images/iconZ.png) no-repeat 3px -88px ;}/* ���ͼ��  */
+	.westZ .accordion-expand{background:url(../images/iconZ.png) no-repeat  3px -112px;}
+	.westZ .panel-tool a:hover{background-color:none;}
+	
+	/*  west ����   */
+	
+

@@ -1,0 +1,327 @@
+@charset "utf-8";
+/*header*/
+.top{height:29px;border-bottom:1px solid #dcdcdc;}
+.top-container{width:1002px;margin:0 auto;height:29px;line-height: 29px;font-size:12px;}
+.top-welcome{float:left;color:#767676;}
+.top-info{float:right;}
+.top-info a{color:#39abf3;text-decoration:underline;}
+.head{width:1002px;margin: 0 auto;height:107px;}
+.indexLogo{float:left;margin-top:20px;}
+.search{float:right;width:240px;height:30px;margin-top:30px;border:1px solid #d9d9d9;border-left-color:#386cb7;}
+.search input{border:none;float:left;margin-top:3px;}
+.search .ser-text{width:185px;height:24px;line-height:24px;color:#b3b3b3;text-indent: 8px;}
+.ser-btn{width:40px;height:24px;background: url(../images/ser_btn.jpg) no-repeat center center;}
+.top-login{margin-right:6px;position: relative;}
+.top-info li{float:left;}
+.index-login{width:180px;padding:0 17px;height:135px;position: absolute;top:30px;right:-100px;background: #fff;border:2px solid #d6d6d6;}
+.login-user{padding-top:12px;}
+.login-user span{width:50px;display: inline-block;}
+.login-text{width:116px;height:26px;border:1px solid #d6d6d6;line-height: 26px;text-indent:2px;}
+.login-btn{margin-top:10px;width:100%;height:28px;line-height:30px;background: #39abf3;color:#fff;font-family: '微软雅黑';font-weight: bold;}
+.loginSpan{position:absolute;color:#dcdcdc;top:-21px;left:100px;}
+.user-info{width:76px;height:110px;position: absolute;top:30px;right:-30px;background: #fff;border:2px solid #d6d6d6;}
+.user-info .loginSpan{left:30px;}
+.user-info a{height:28px;display: block;padding-left:10px;text-decoration: none;}
+.user-info a:hover{color:#fff;background: #39abf2;}
+/*banner*/
+.indexBanner{height:380px;overflow:hidden;width:100%;position:relative;}
+.indexBanner .banner{width: 100%;height: 380px;overflow: hidden;position: absolute;top: 0;left: 0;background-position: center top;z-index: 1;display: inline-block;display: none;background-repeat: no-repeat;}
+.indexBanner .icoList{height: 5px;display: none;width: 1000px;margin-right: auto;margin-left: auto;}
+.indexBanner .icoList li{float:right;margin-right: 3px;width: 49px;height: 8px;margin-left: 10px;}
+.indexBanner .icoList li a{display: block;width: 49px;height: 8px;background: #fff;overflow: hidden;background-color: #fff;border-radius: 5px;}
+.indexBanner .icoList li a:hover , .indexBanner .icoList li a.cur{background-color: #f37d26;}
+.banner-title {height: 5px;width: 100%;left: 0px;padding-top:1px;position: absolute;z-index: 100;top: 350px;}
+
+/*内容区块*/
+.nav{height:46px;background: #f1f1f1;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;}
+.nav-bar{width:1002px;height:46px;margin:0 auto;}
+.nav li{float:left;width:142px;height:46px;}
+.nav a{float:left;width:142px;height:46px;display: block;font:bold 16px/46px '微软雅黑';text-align: center;}
+.nav a:hover , .nav .active{background: #39abf3;color:#fff;}
+.banner-wrap{width:100%;height:380px;overflow:hidden;}
+.news{height:336px;width:100%;background: #f1f1f1;}
+.news-container{width:1002px;margin:0 auto;padding-top:20px;}
+.news-pic{float:left;width:446px;height:290px;border:3px solid #e3e3e3;position: relative;}
+.news-pic-bg{width:100%;height:30px;background: #000;opacity: 0.7;filter:alpha(opacity=70);position: absolute;left:0;bottom:0;}
+.news-pic-text{width:96%;padding:0 2%;height:30px;font:bold 16px/30px '微软雅黑';color:#fff;text-align:center;position: absolute;left:0;bottom:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.news-title{width:530px;float:right;}
+.news-title-top{height:20px;border-bottom:1px solid #e1e1e1;}
+.news-title-top span{float:left;padding-right:15px;height:25px;background: #f1f1f1;font:bold 18px '微软雅黑';color:#39abf3;}
+.news-title-top a{float:right;line-height:20px;}
+.news-title-list li{padding-top:20px;padding-bottom:15px;line-height: 22px;}
+.news-title-list h3{font:16px/35px '微软雅黑';overflow:hidden;text-overflow:ellipsis;white-space: nowrap;}
+.news-title-list p a{color:#666;}
+.news-title-list a:hover{color:#f37d26;}
+.news-p{height:45px;overflow:hidden;}
+/*数据区块*/
+.data{width:1002px;margin:0 auto;padding: 20px 0;height: 360px;}
+.data-top{height:44px;border-bottom:4px solid #39abf3;}
+.data-nav{float:left;hegiht:44px;}
+.data-top li{float:left;display:block;width:138px;hegiht:44px;font:bold 18px/44px '微软雅黑';color:#555;text-align: center;cursor: pointer;}
+.data-top .active{color:#fff;background: #39abf3;}
+.data-more{float:right;line-height: 44px;}
+a.more{color:#f37d26;font-size:12px;}
+a.more:hover{text-decoration: underline;}
+.data-wrap{padding-top: 17px;}
+.data-first{width:316px;float:left;height:292px;overflow:hidden;}
+.dataFirst-pic{width:316px;height:170px;margin-bottom:10px;position: relative;}
+.data-first p a{font-size:14px;font-family: '微软雅黑';}
+.data-list li{height:110px;margin-bottom:40px;}
+.data-list img{float:left;width:200px;height:110px;margin-right: 15px;}
+.data-list h3{font:bold 16px/30px '微软雅黑';overflow:hidden;text-overflow:ellipsis;white-space: nowrap;}
+.data-list p{font-size:14px;font-family: '微软雅黑';}
+.newData{margin-left:-27px;}
+.newData .data-first{margin-left:27px;height:292px;overflow:hidden;}
+.hotData{}
+.hotData .data-list{width:1029px;overflow: hidden;margin-left:-27px}
+.hotData .data-list li{float:left;width:487px;margin-left:27px;}
+.hotData .data-list p{height:78px;overflow:hidden;}
+.tuijian .data-list{width:660px;float:right;color:#555;}
+/*友情链接*/
+.link{padding:20px 0;background: #f1f1f1;}
+.link-wrap{width:982px;padding:10px 10px 10px 0;margin:0 auto;border:1px solid #cfcfcf;line-height: 25px;}
+.link-wrap span{margin-left:10px;font:bold 16px '微软雅黑';}
+.link-wrap a{display:inline-block;margin-left:8px;margin-right:8px;font-family: '微软雅黑'}
+/*底部*/
+.footer{padding:15px 0;background: #396bb7;text-align: center;color:#fff;font-size:12px;}
+
+/* 地图展示页 */
+.bgDiv{background:#f1f1f1;}
+.contCenter{width:1002px;margin:0 auto;}
+	.locBlock{padding:20px 0;font-size:12px;}
+		.locBlock em{margin:0 7px;}
+		.locBlock a{color:#39abf2;}
+			.locBlock a:hover{color:#f37d26;}
+	.borderBlock{border:1px solid #D0D0D0;padding:7px 0;background:#fff;}		
+		.searchUl{float:left;margin:0 20px;}
+			.searchUl li{float:left;margin-left:50px;}
+				.searchUl li:first-child{margin-left:0px;}
+			.searchUl span,.searchUl  i{float:left;}
+				.searchUl  i:first-child{margin-right:20px;}
+				.searchUl  i{line-height:29px;}
+			.searchUl select{width:130px;}
+	
+/* 知识库数据详情页 */
+.whiteBlock{background:#fff;}
+.zsksjWap{padding:30px 50px 50px 50px;}
+.paddingTop20{padding-top:20px;}
+.paddingTop30{padding-top:30px;}
+.paddingTop40{padding-top:40px;}
+.paddingTop60{padding-top:60px;}
+.zsksjTit{font-size:24px;text-align:center;line-height:1.3em;font-family:'微软雅黑';}
+	.blueSTit{position:relative;height:26px;line-height:26px;border-bottom:1px solid #39ABF2;}
+		.blueSTit span{float:left;display:block;padding:0px 10px;height:26px;color:#fff;font-weight:bold;background:#39ABF2;}
+	.zsksjInfo{line-height:30px;}
+	.grayBorderA,.grayBorderA:link,.grayBorderA:visited{display:inline-block;margin-right:10px;margin:10px 10px 0 0;height:30px;line-height:30px;padding:0px 15px;border:1px solid #C5DCFF;color:#3b87ff;text-decoration:underline;background:#ebf3ff;}
+		.grayBorderA:hover{color:#f37d26;}
+	
+/*  湖泊详情页  */
+.padding10{padding:10px;}
+	.lPicPhxqy{float:left;position:relative;width:400px;height:300px;overflow:hidden;}
+	.lPicPhxqy img{width:400px;height:300px;}
+		.lPicPhxqy span,.lPicPhxqy em{position:absolute;left:0px;bottom:0px;width:100%;height:36px;line-height:36px;}
+		.lPicPhxqy span{background:#000;z-index:99;opacity:0.6;}
+		.lPicPhxqy em{text-align:center;color:#fff;z-index:100;}
+	.rUlPhxqy{float:right;width:570px;height:300px;overflow:hidden;}	
+		.rUlPhxqy .phxqTable{margin-top:-5px;}
+		.phxqTable{width:100%;}
+		.phxqTable th,.phxqTable td{line-height:32px;}
+		.phxqTable th{font-weight:normal;color:#828282;text-align:right;vertical-align:top;}
+.marginTop30{margin-top:30px;}	
+.blueBTit{border-bottom:2px solid #39ABF3;overflow:hidden;}	
+	.blueBTit span{float:left;display:block;padding:0 25px;height:44px;line-height:44px;color:#fff;font-weight:bold;background:#39ABF3;}
+.navPhxqy{height:44px;border:1px solid #DFDFDE;border-width:1px 0px;background:#F7F7F5;}
+	.navPhxqy li{overflow:hidden;float:left;border-left:1px solid #DFDFDE;height:44px;line-height:44px;padding:0 40px;cursor:pointer;}
+	.navPhxqy li:first-child{border-left:0px;}
+	.navPhxqy li.on,.navPhxqy li:hover{margin-top:-1px;border-top:2px solid #39ABF3;color:#39abf2;font-weight:bold;line-height:43px;background:#fff;}
+.imgWapHpxq{padding:1px 50px 0px 50px;margin-left:-100px; }	
+	.imglistUl{float:left;width:233px;height:276px;overflow:hidden;font-size:12px;margin:30px 0 0 100px;}	
+		.imglistUl .imgLi{position:relative;height:174px;border:1px solid #C4C4C4;}
+			.imglistUl .imgLi img{height:100%;width:100%;}
+			.imglistUl .imgLi span,.imglistUl .imgLi em{position:absolute;left:0px;bottom:0px;width:100%;height:30px;line-height:30px;}
+			.imglistUl .imgLi span{background:#000;z-index:99;opacity:0.6;}
+			.imglistUl .imgLi em{width:96%;padding:0 2%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:center;color:#fff;z-index:100;}	
+		.imglistUl .textLi{line-height:24px;margin-top:6px;}
+	.pageChange{text-align:center;height:32px;padding:40px 0 20px 0;}		
+		.pageChange a{display:inline-block;margin-left:8px;font-size:12px;height:30px;line-height:30px;border:1px solid #ddd;color:#39abf3;overflow:hidden;}		
+			.pageChange a:first-child{margin-left:0px;}
+		.pageChange .grayA{padding:0 16px;border-color:#efefef;background:#efefef;color:#CFCFCF;}		
+		.pageChange .numAOn{color:#fff;background:#39abf3;border-color:#39abf3;width:30px;text-align:center;}
+		.pageChange .numA{width:30px;text-align:center;}
+		.pageChange .textA{padding:0 16px;}
+	.changeHpxqy{min-height:200px;}	
+		
+
+/*会员中心*/
+/*机构信息*/
+.vipbg{background: url(../images/vipleftbg.jpg) left top repeat-y;overflow: hidden;}
+.vip-container{width:1002px;}
+.vip-nav{padding:0 1px;width:168px;float:left;}
+
+.vip-content{width:770px;padding:20px;float:right;min-height:500px;border:1px solid #ddd;background: #fff;}
+.vip-info{width:680px;margin:40px auto 30px;border:1px solid #ddd;}
+.vip-info th , .vip-info td{border:1px solid #ddd;}
+.vip-info th{padding:10px 35px 10px 0;text-align:right;background: #ededed;font-weight: normal;}
+.vip-info td{padding-left:20px;}
+.divInput{display:inline-block;width:485px;color:#555;font-size:14px;}
+.w205{width:205px;}
+a.changePW{display:inline-block;margin-left:10px;font-weight:bold;color:#39abf3;text-decoration: underline;background: none;}
+a.changePW:hover{color:#64b9ef;}
+.proType{width:495px;}
+.submitWrap{text-align: center;}
+.submitWrap input{width:140px;height:40px;font-weight:bold;font-size:16px;transition:all .4s ease;}
+.btn-submit{color:#fff;background:#39abf3;}
+.btn-submit:hover{background: #64bff8;}
+.btn-off{margin-left:20px;color:#39abf3;border:1px solid #39abf3;background: #fff;}
+.btn-off:hover{background: #f8f7f7;}
+/*湖泊管理*/
+.addDiv{text-align: right;}
+a.hupo-add , a.daolu{margin-left:10px;display:inline-block;width:68px;height:22px;text-align: center;color:#fff;background: #39abf3;line-height: 22px;font-size:12px;}
+a.hupo-add:hover , a.daolu:hover{background: #f37d26;}
+.hupo-list{margin-top:10px;font-size:12px;table-layout: fixed;}
+.hupo-list th , .hupo-list td{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;padding:10px;border:1px solid #ddd;text-align: center;}
+.hupo-list th{background: #ededed;}
+.operation a{color:#39abf3;text-decoration: underline;}
+.operation a:hover{color:#f37d26;}
+
+.openbg{width:100%;height:100%;position: fixed;left:0;top:0;background: #000;opacity: 0.4;filter:alpha(opacity=40);}
+.openWrap{width:770px;margin-left:-385px;position: absolute;top:10px;left:50%}
+.openHead{height:42px;width:100%;}
+.openLeft{width:10px;height:42px;float:left;background: url(../images/openL.png) no-repeat;}
+.openMiddle{margin-left:10px;margin-right:10px;height:42px;line-height:42px;background: url(../images/openM.png) repeat-x;}
+.openRight{width:10px;height:42px;float:right;background: url(../images/openR.png) no-repeat;}
+.openTitle{font-weight: bold;color:#fff;}
+.close{width:25px;float:right;background: url(../images/openHr.jpg) no-repeat left center;text-align: right;}
+.openMain{padding-top:20px;background: #fff;overflow:hidden;}
+.openTable{width:730px;margin:0 auto;border:1px solid #c8c8c8;}
+.openTable td , .openTable th{padding:10px 0;border:1px solid #c8c8c8;}
+.openTable th{padding-right:25px;background: #ededed;text-align: right;font-weight: normal;}
+.openTable td{padding-left:10px;}
+.openTable td [type="radio"]{
+    vertical-align:baseline;
+}
+.openInput{width:175px;}
+.openInput:focus{border:1px solid #b9d6f4;}
+.w120{width:120px;margin-right:10px;}
+.openSelect{width:185px;height:28px;border:1px solid #bdbdbd;line-height: 28px;}
+.openTextarea{width:545px;height:90px;border:1px solid #bdbdbd;padding:4px;}
+.openBtn{margin-top:40px;height:34px;border-top:1px solid #c4c4c4;border-bottom:5px solid #2386c3;text-align: right;}
+.openBtn a{display:inline-block;padding-left:43px;width:48px;height:34px;line-height:34px;color:#fff;font-weight: bold;font-size:14px;text-align: left;}
+.openOn{background: url(../images/baochun.jpg) no-repeat 15px center #f45900;}
+.openOff{height:31px;background: url(../images/guanbi.jpg) no-repeat 15px center #39abf2;}
+
+.data-content{width:808px;float:right;border:1px solid #ddd;background: #fff;}
+.dataMain .navPhxqy li{padding:0 29px;}
+.marT25{margin-top:25px;clear: both;}
+.shuju-list{padding:0 20px;}
+
+/* 湖泊生态监测数据库列表页 */
+.leftColumn{float:left;width:170px;}
+	.headTitColumn{height:40px;line-height:40px;color:#fff;font-weight:bold;text-align:center;padding:0 10px;overflow:hidden;text-overflow:ellipse;white-space:nowrap;background:#1C92DD;}
+	.columnLink a{display:block;border:1px solid #ddd;border-top:0px;height:42px;line-height:42px;font-size:12px;padding:0px 20px;background:#fff;overflow:hidden;text-overflow:ellipse;white-space:nowrap;}
+		.columnLink a:first-child{border-top:1px;}
+		.columnLink a:hover,.columnLink .on{background:#39ABF3;color:#fff;border-left-color:#39ABF3;border-right-color:#39ABF3;}
+.rightColumn{float:right;width:810px;border:1px solid #e3e3e3;min-height:500px;}
+	.padding20-25{padding:20px 25px;}
+	.imglistColumn{margin:-30px 0 0 -30px;}
+	.imglistColumn .imglistUl{margin-left:30px;}
+.pageChange {font-size:12px;}
+	.pageChange  a{margin-left:2px;}
+	.pageChange  table{margin:0 auto;}
+		.pageChange  table a,.pageChange  table span,.pageChange  table input{float:left;font-size:12px;}
+		.pageChange  table a{margin-left:10px;}
+		.pageChange  table a:first-child{margin-left:0px;}
+	.pageChange  span{line-height:32px;}
+	.pageChange  .dny{margin:0 10px;}
+	.pageChange  .dnyInp{height:22px;line-height:22px;width:40px;padding:0 5px;border:1px solid #ddd;margin:4px 5px 0 5px;}
+	.pageChange  .dd{margin-left:10px;font-weight:bold;font-family:'微软雅黑';}
+	
+	.pageChange  input[type="button"]{height:24px;line-height:22px;width:40px;text-align:center;color:#13A1FF;border:1px solid #079cff;margin:4px 0px 0 5px;background:#fff;}
+.rightColumn .pageChange{padding-bottom:0px;}	
+
+/* 全球湖泊研究机构数据库列表页 */
+.searchUl{overflow:hidden;}
+	.searchUl input{float:left;height:26px;line-height:28px;border:1px solid #C2C2C2;padding:0 10px;width:170px;}
+	.searchA,.searchA:link,.searchA:visited{display:inline-block;height:28px;line-height:28px;width:60px;color:#f9f9f9;font-weight:bold;text-align:center;background:#39ABF3;}
+	.searchUl em{margin-left:20px;}
+.sjkliTabel{border-left:3px solid #1c92dd;padding:0px 30px;margin-top:20px;background:#f9f9f9;}	
+	.sjkliTabel:first-child{margin-top:13px;}
+	.sjkliTabel h1{text-align:left;color:#396cb9;padding-top:5px;}
+	.sjkliTabel th{font-weight:normal;text-align:left;padding-right:10px;vertical-align:top;}
+	.sjkliTabel p {padding-bottom:10px;}
+		.sjkliTabel p span{display:inline-block;height:26px;line-height:26px;padding:0 10px;color:#fff;font-weight:bold;background:#555;}
+	
+/* 7类数据入口页  */
+.sjrkPage img{width:1002px;height:670px;}
+
+/* 知识库搜索页 */
+.zskssCont{height:552px;padding-top:117px;background:url(../images/zskssyImg.jpg) no-repeat top center;}
+	.searchZskss{width:770px;height:52px;border:1px solid #39ABF2;margin:0 auto;background:#fff;} 
+		.searchZskss input[type="text"]{float:left;border:0px;width:610px;padding:0 20px;height:52px;line-height:52px;}
+		.searchZskss input[type="button"]{float:right;border:0px;height:52px;line-height:52px;width:116px;color:#fff;text-align:center;background:#1fa5ff;font:bold 16px/46px "微软雅黑";}
+	
+.vip-content .pageChange{padding-bottom:0px;}
+
+
+/*2015-11-6样式*/
+.w460{width:460px;}
+.w575{width:575px;}
+.w230{width:230px;}
+.w110{width:110px;}
+.w70{width:70px;}
+.w205{width:205px;}
+.w360{width:360px;}
+.W400H290{width:400px;height:290px;margin-left:-200px;top:50%;margin-top:-145px;}
+.zbTable li{float:left;width:295px;padding-top:8px;padding-bottom:7px;}
+.zbTable li span{display:inline-block;padding-right:5px;width:120px;text-align: right;}
+.zbTable li em{padding-left:3px;font-size:12px;font-family: Arial;}
+.yes{background-image:url(../images/yes.jpg);}
+
+/*新闻列表*/
+.newsList li{padding-left:20px;height:40px;border-bottom:1px solid #e5e5e5;background: url(../images/newslibg.jpg) no-repeat 5px center;}
+.newsList li em{float:right;margin-right:10px;}
+.newsList a{max-width:600px;height:40px;line-height:40px;display:inline-block;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;}
+.h1title{margin-top:5px;font-size:16px;color:#1c92dd;text-align: center;}
+.time-soure{height:35px;;line-height: 35px;border-bottom: 1px solid #d3d3d3;text-align: center;font-size:12px;}
+.time-soure span{margin:0 35px;}
+.neirong{padding:20px 10px;line-height: 35px;}
+
+.changeSear{margin-top:25px;height:40px;}
+.changeSear span{float:left;margin-left:15px;}
+.timepic{clear:both;width:165px;height:28px;border:1px solid #ddd;background: url(../images/time.jpg) no-repeat right center;text-indent: 2px;}
+.changeCx{width:60px;height:30px;background: #39abf2;color:#fff;font-weight: bold;}
+.facNav{height:44px;background: #f7f7f5;border-bottom:1px solid #dfdfde;}
+.facNav li{float:left;width:114.5px;height:44px;line-height:44px;text-align:center;border-right:1px solid #dfdfde;cursor: pointer;}
+.facNav .facNavOn{width:114.5px;height:44px;margin-top:-1px;background: #fff;border-top:2px solid #39abf2;color:#39abf2;font-weight: bold;}
+
+
+/*  知识库搜索结果页  */
+.ssjgCont{width:1002px;margin:0 auto;padding-top:57px;min-height:400px;background:#fff url(../images/zskssjgImg.jpg) no-repeat top center;}
+.ssjgInfo{width:772px;margin:0 auto;}		
+	.ssjgdataNum{height:49px;line-height:49px;border-bottom:1px solid #D6D6D6;font-size:12px;margin-bottom:20px;}
+		.ssjgdataNum em{color:#e50000;}
+	.ssjgUl{border-bottom:1px dotted #CFCFCF;padding:22px 0 17px 0;}		
+		.ssjgUl:first-child{margin-top:20px;}
+		.ssjgUl li:first-child{line-height:20px;font-weight:bold;font-size:14px;padding-bottom:2px;}
+		.ssjgUl a,.ssjgUl a:link,.ssjgUl a:visited{color:#1fa5ff;text-decoration:underline;}
+			.ssjgUl a em{color:#e50000;}
+		.ssjgUl li{font-size:12px;line-height:24px;}	
+		.ssjgUl li em {color:#e50000;}
+		
+/* 关于平台 */
+.gyptCont{min-height:400px;padding-top:187px;text-align:center;background:url(../images/gyptImg.jpg) no-repeat top center;}
+	.gyptCont img{width:1002px;height:481px;}
+		
+		
+/* 联系我们 */
+.lxwmCont{min-height:400px;padding-top:187px;background:url(../images/lxwmImg01.jpg) no-repeat top center;}
+	.lxwmCont p{line-height:36px;font-size:18px;font-family:'微软雅黑';text-align:center;}
+		.lxwmCont p:first-child{padding-top:80px;}
+		.lxwmCont p span{color:#39abf2;}
+	.lxwmImg{padding:110px 0 30px 0;text-align:center;}
+		.lxwmImg img{width:910px;height:115px;}
+
+
+.phxqTable th,.phxqTable td{vertical-align:top;}		
+.supHeight{line-height:1em;}	
+

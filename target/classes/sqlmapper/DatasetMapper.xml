@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Dataset">
+
+<resultMap type="lakeDatasetInfo" id="loadLatestDataset" >
+<id property="id" column="id" />
+<result property="lakeId" column="lakeId" />
+<result property="lakeDatasetTitle" column="lakeDatasetTitle" />
+<result property="lakeDatasetPic" column="lakeDatasetPic" />
+<result property="lakeDatasetDesc" column="lakeDatasetDesc" />
+</resultMap>
+
+<select id="loadLatestDatasetList" resultType="lakeDatasetInfo" parameterType="java.util.HashMap">
+select t.id as lakeId,t.title as lakeDatasetTitle,t.pic_add as lakeDatasetPic,substr(t.data_desc,0,73) as lakeDatasetDesc 
+from t_dataset t where <![CDATA[rownum<=#{rownum} ]]>  and t.is_delete=#{is_delete} order by t.last_modify desc 
+</select>
+
+</mapper>

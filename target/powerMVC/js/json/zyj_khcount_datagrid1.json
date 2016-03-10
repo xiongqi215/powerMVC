@@ -1,0 +1,43 @@
+[
+	{
+		"departid":"派出所序列",
+		"departname":"XX派出所",
+		"finalscore":"100",
+		"score":"80",
+		"perscore":"80",
+		"operation":"操作"
+	},
+	{
+		"departid":"派出所序列",
+		"departname":"XX派出所",
+		"finalscore":"100",
+		"score":"80",
+		"perscore":"80",
+		"operation":"操作"
+	},
+	{
+		"departid":"派出所序列",
+		"departname":"XX派出所",
+		"finalscore":"100",
+		"score":"80",
+		"perscore":"80",
+		"operation":"操作"
+	},
+	{
+		"departid":"业务大队序列",
+		"departname":"XX大队",
+		"finalscore":"100",
+		"score":"80",
+		"perscore":"80",
+		"operation":"操作"
+	},
+	{
+		"departid":"业务大队序列",
+		"departname":"XX大队",
+		"finalscore":"100",
+		"score":"80",
+		"perscore":"80",
+		"operation":"操作"
+	}
+	
+]

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 会员管理Mapper -->
+<mapper namespace="user">
+	<resultMap type="UserInfo" id="UsersResultSet">
+		<id property="id" column="ID" />
+		<result property="userName" column="USER_NAME" />
+		<result property="loginName" column="LOGIN_NAME" />
+		<result property="password" column="PASSWORD" />
+		<result property="sindex" column="SINDEX" />
+		<result property="phone" column="PHONE" />
+		<result property="telephone" column="TELEPHONE" />
+
+		<association property="organInfo" javaType="OrganInfo">
+			<result property="id" column="ORGAN_ID" />
+			<result property="name" column="ORGAN_NAME" />
+		</association>
+	</resultMap>
+
+	<!-- 查询会员 -->
+	<select id="getVipsResultSet" resultMap="UsersResultSet">
+		select
+		ts.*,tr.name as organ_name
+		from t_user ts,t_organ tr
+		where ts.is_delete = '0' and
+		tr.is_delete = '0'
+		and ts.user_type = '0'
+		and ts.org_id = tr.id
+	</select>
+
+	<select id="getVipsResultSetByUserName" resultMap="UsersResultSet"
+		parameterType="java.lang.String">
+		select
+		ts.*,tr.name as organ_name
+		from t_user ts,t_organ tr
+		where ts.is_delete = '0' and
+		tr.is_delete = '0'
+		and ts.user_type = '0'
+		and ts.org_id = tr.id
+		and
+		ts.user_name like #{user_name}
+	</select>
+
+
+	<select id="checkUserLogin" resultMap="UsersResultSet">
+
+		select u.id, u.user_name, u.login_name,
+		o.id as ORGAN_ID,o.name as ORGAN_NAME
+		from t_user u,t_organ o
+		where u.login_name = #{loginName}
+		and u.password = #{password}
+		and u.is_delete = #{isDelete}
+		and u.user_type = #{userType}
+        and u.org_id=o.id
+	</select>
+</mapper>

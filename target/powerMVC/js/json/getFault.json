@@ -1,0 +1,17 @@
+[ {
+	"identification" : "901",
+	"agentBank" : "工商银行",
+	"agentName" : "工商",
+	"executivegroupName" : "执行组",
+	"msgflowName" : "消息流",
+	"starttime" : "2015-06-09",
+	"endtime" : "2015-06-10"
+},{
+	"identification" : "903",
+	"agentBank" : "建设银行",
+	"agentName" : "建设",
+	"executivegroupName" : "执行组",
+	"msgflowName" : "消息流",
+	"starttime" : "2015-06-10",
+	"endtime" : "2015-06-11"
+} ]

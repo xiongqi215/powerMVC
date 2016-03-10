@@ -1,0 +1,5 @@
+[
+	{"name":"计划类型","code":"PlanType","params":"0,1","description":"0:正常;1:冲销"},
+	{"name":"清算方式","code":"LIQMeans","params":"0,1","description":"0:纸质;1:电子"}
+	
+]

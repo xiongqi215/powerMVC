@@ -1,0 +1,15 @@
+[{
+	"resource":"用户管理，角色管理，消息流查询",
+	"name":"超级管理员",
+	"description":"能看到所有资源"
+},
+{
+	"resource":"消息流查询",
+	"name":"财政用户",
+	"description":"能看到消息流查询菜单"
+},
+{
+	"resource":"报文类型管理",
+	"name":"银行用户",
+	"description":"能看到部分资源"
+}]

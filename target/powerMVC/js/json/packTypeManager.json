@@ -1,0 +1,23 @@
+[
+	{
+		"sysType":"国库集中支付",
+		"rules":"直接支付凭证交易报文",
+		"Typecode":"301",
+		"TypeName":"直接支付凭证交易报文",
+		"TypeInfo":"直接支付凭证交易报文简介"
+	},
+	{
+		"sysType":"国库集中支付",
+		"rules":"授权支付额度交易报文",
+		"Typecode":"401",
+		"TypeName":"授权支付额度交易报文",
+		"TypeInfo":"授权支付额度交易报文简介"
+	},
+	{
+		"sysType":"国库集中支付",
+		"rules":"",
+		"Typecode":"100",
+		"TypeName":"授权支付额度",
+		"TypeInfo":"授权支付额度简介"
+	}
+]

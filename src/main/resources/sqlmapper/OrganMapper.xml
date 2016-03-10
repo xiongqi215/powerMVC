@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="organ">
+	<resultMap type="OrganInfo" id="organListResult">
+		<id property="id" column="ID" />
+		<result property="address" column="ADDRESS" />
+		<result property="contacts" column="CONTACTS" />
+		<result property="email" column="EMAIL" />
+		<result property="enName" column="EN_NAME" />
+		<result property="mechanism" column="MECHANISM" />
+		<result property="organType" column="ORGAN_TYPE" />
+		<result property="name" column="NAME" />
+		<result property="tele" column="TELE" />
+		<result property="countryCName" column="COUNTRYCNAME" />
+		<result property="countryEName" column="COUNTRYENAME" />
+		<result property="sort" column="SORT" />
+		<result property="countryId" column="COUNTRYID" />
+	</resultMap>
+
+	<select id="organList" resultMap="organListResult"
+		parameterType="java.lang.String">
+
+		select o.*,c.NAME_CN as countryCName, c.NAME_EN as
+		countryEName, c.ID as countryId 
+		from t_organ o, t_base_country c
+		where
+		o.is_delete=#{is_delete} and o.COUNTRY_ID=c.id
+
+	</select>
+	
+	
+	<select id="getOrganById" resultType="OrganInfo"
+		parameterType="java.util.HashMap">
+
+		select o.*,c.NAME_CN as countryCName ,c.NAME_EN as 
+		countryEName ,c.ID as countryId from t_organ o, t_base_country c
+		where
+		o.is_delete=#{isDelete} and o.COUNTRY_ID=c.id
+		and o.id=#{id}
+	</select>
+
+</mapper>

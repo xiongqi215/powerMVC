@@ -1,0 +1,33 @@
+[
+{
+	
+	"value":"pcs01",
+	"text":"xx派出所",
+	"group":"派出所序列"
+},
+{
+	
+	"value":"pcs02",
+	"text":"yy派出所",
+	"group":"派出所序列"
+},
+{
+	
+	"value":"yu01",
+	"text":"xx业务大队",
+	"group":"业务大队序列"
+},
+{
+	
+	"value":"yu02",
+	"text":"yy业务大队",
+	"group":"业务大队序列"
+},
+{
+
+	"value":"yu03",
+	"text":"zz业务大队",
+	"group":"业务大队序列"
+}
+
+]

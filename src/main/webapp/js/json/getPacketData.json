@@ -1,0 +1,17 @@
+[          {        
+			"applicationSystem" : "国库集中支付",
+			"packetType" : "直接支付凭证交易报文",
+			"totalPacket" : "102",
+			"tradingSuccess" : "100",
+			"successPercent" : "98%",
+			"tradingFailure" : "2",
+			"failurePercent" : "2%"
+		},{        
+			"applicationSystem" : "惠农一卡通",
+			"packetType" : "直接支付凭证交易报文",
+			"totalPacket" : "102",
+			"tradingSuccess" : "100",
+			"successPercent" : "98%",
+			"tradingFailure" : "2",
+			"failurePercent" : "2%"
+		}]

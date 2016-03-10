@@ -1,0 +1,6 @@
+
+[
+	{"name":"超级管理员","loginname":"admin","right":"超级管理员","tel":"13988888888"},
+	{"name":"张三","loginname":"zhangsan","right":"财政用户","tel":"13966666666"}
+	
+]

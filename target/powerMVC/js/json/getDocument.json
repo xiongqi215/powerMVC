@@ -1,0 +1,16 @@
+{"total":2,"rows":[
+{
+	"fiscal" : "南昌市",
+	"payType" : "直接支付",
+	"year" : "2013",
+	"payTotal" : "3000000"
+
+},{
+	"fiscal" : "萍乡市",
+	"payType" : "直接支付",
+	"year" : "2013",
+	"payTotal" : "3000000"
+}
+],"footer":[
+	{"payTotal":"总计:6000000"}
+]}
